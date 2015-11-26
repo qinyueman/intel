@@ -1,0 +1,61 @@
+//导入bootstrap的所有样式
+@import "bootstrap.less";
+//定义自己的专有样式
+body {
+  margin-top: @navbar-height;
+}
+/*导航条样式*/
+.logo {
+  display: inline-block;
+  width: 53px;
+  height: 35px;
+  background: url("../img/hdr-spr.png") 0 -427px no-repeat;
+  margin-top: -7px;
+}
+
+.navbar{
+  .login-menu {
+  width: 400px;
+  padding: 15px;
+  }
+  .navbar-collapse{
+    .navbar-form{
+      .form-control-feedback{
+        color:@blue-dark;
+      }
+    }
+    .navbar-nav{
+      .active{
+        border-bottom:8px solid @blue-lighter;
+        margin-bottom:-8px;
+      }
+    }
+  }
+}
+.main{
+  background-color:@blue-dark;
+  color:@light-text-color;
+  a{
+    color:@light-text-color;
+    &:hover{
+    color:@blue-lighter;
+   }
+  }
+  >.container>.row{
+      margin-bottom:15px;
+  }
+}
+.head{
+  display:inline-block;
+  width:23px;
+  height:20px;
+  background:url(../img/social_sprite_smushed.png)no-repeat -1px 0;
+  vertical-align:middle;
+}
+.hand1{
+  background-position:0 -771px;
+}
+.footer ul li{
+  margin-top:10px;
+}
+
